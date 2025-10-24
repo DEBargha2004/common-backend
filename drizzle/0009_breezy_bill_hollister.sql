@@ -1,0 +1,1 @@
+ALTER TABLE "flows" ALTER COLUMN "total_executions" SET NOT NULL;

@@ -11,6 +11,7 @@ import cookieParser from "cookie-parser";
 import { userRouter } from "./modules/user/user.route";
 import { SuccessResponse } from "./core/utils/response";
 import morgan from "morgan";
+import { newsAppRouter } from "./modules/news-summarizer/app.route";
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(express.json());
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/user", userRouter);
+app.use("/api/v1/news-app", newsAppRouter);
 
 app.get("/health", (req, res) => {
   res.status(200).json(new SuccessResponse("System is up and runnning"));
