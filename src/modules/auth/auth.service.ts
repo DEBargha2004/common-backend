@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { env } from "../../core/utils/env";
+import { env } from "../../utils/env";
 import { TLogin } from "../../schema/login.schema";
 import { JwtPayload } from "../../types/jwt";
 

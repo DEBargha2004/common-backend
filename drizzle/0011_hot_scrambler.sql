@@ -1,0 +1,1 @@
+ALTER TABLE "executions" RENAME COLUMN "content" TO "content_path";

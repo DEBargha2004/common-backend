@@ -1,4 +1,12 @@
-import { integer, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
+import {
+  boolean,
+  integer,
+  pgTable,
+  text,
+  timestamp,
+  uuid,
+} from "drizzle-orm/pg-core";
 
 export const users = pgTable("users", {
   id: uuid("id").defaultRandom().primaryKey(),
@@ -30,6 +38,10 @@ export const executions = pgTable("executions", {
     .references(() => flows.id, {
       onDelete: "cascade",
     }),
-  content: text("content"),
+  contentPath: text("content_path"),
+  mailedAt: timestamp("mailed_at"),
   createdAt: timestamp("created_at").defaultNow(),
 });
+
+export type TDBFlow = typeof flows.$inferSelect;
+export type TDBExecutionInsert = typeof executions.$inferInsert;

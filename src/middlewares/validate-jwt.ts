@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { AuthService } from "../../modules/auth/auth.service";
 import { ApplicationError } from "../utils/error";
+import { AuthService } from "../modules/auth/auth.service";
 
 export const validateJwt = async (
   req: Request,

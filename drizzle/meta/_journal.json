@@ -71,6 +71,48 @@
       "when": 1761295859799,
       "tag": "0009_breezy_bill_hollister",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1761376962159,
+      "tag": "0010_wise_firebird",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1761393260653,
+      "tag": "0011_hot_scrambler",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1761399620973,
+      "tag": "0012_fine_mister_sinister",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1761400769621,
+      "tag": "0013_motionless_rattler",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1761403863224,
+      "tag": "0014_silent_vargas",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1761406886807,
+      "tag": "0015_volatile_retro_girl",
+      "breakpoints": true
     }
   ]
 }

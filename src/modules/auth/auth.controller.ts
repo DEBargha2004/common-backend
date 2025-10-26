@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 import { AuthService } from "./auth.service";
-import { catchError } from "../../core/utils/catch-error";
-import { ApplicationError } from "../../core/utils/error";
-import { SuccessResponse } from "../../core/utils/response";
+import { catchError } from "../../utils/catch-error";
+import { ApplicationError } from "../../utils/error";
+import { SuccessResponse } from "../../utils/response";
 import { TLogin } from "../../schema/login.schema";
 import { UserService } from "../user/user.service";
 import bcrypt from "bcrypt";

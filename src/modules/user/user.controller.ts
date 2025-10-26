@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { UserService } from "./user.service";
-import { ApplicationError } from "../../core/utils/error";
-import { catchError } from "../../core/utils/catch-error";
+import { ApplicationError } from "../../utils/error";
+import { catchError } from "../../utils/catch-error";
 import { DrizzleQueryError } from "drizzle-orm";
 
 export class UserController {
